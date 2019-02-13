@@ -2,7 +2,7 @@ def my_select(collection)
  # your code here!
  array = []
  if block_given?
- array = collection.select do |num| num.even?
+ collection.select do |num| array = num.even?
  yield(num)
  end 
  end 
